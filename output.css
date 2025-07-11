@@ -267,6 +267,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
