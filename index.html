@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <title>Base Apparel coming soon page</title>
+</head>
+<body>
+  <main class="main h-screen">
+    <header class="header py-10 w-10/12 mx-auto md:w-2/3 lg:w-1/2 md:py-20">
+      <img src="./images/logo.svg" alt="logo">
+    </header>
+    <section class="hero">
+      <img class="w-1/1 md:hidden max-h-100" src="./images/hero-mobile.jpg" alt="hero-mobile">
+      <img class="w-1/1 h-1/1 hidden md:block" src="./images/hero-desktop.jpg" alt="hero-desktop">
+    </section>
+    <section class="description w-10/12 mx-auto my-15 md:w-2/3 lg:w-1/2">
+      <div class="text-center uppercase tracking-[1rem] text-4xl sm:text-6xl md:text-start">
+        <h1 class="text-pink400 font-[300]">we're</h1>
+        <h1 class="text-gray900 font-[600]">coming</h1>
+        <h1 class="text-gray900 font-[600]">soon</h1>
+      </div>
+      <p class="text-center mb-8 mt-6 text-pink400 font-[400] md:text-start md:leading-[2rem]">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <div id="emailBox" class="relative">
+        <input id="email-input" class="w-full border-2 border-pink400 rounded-full py-4 px-6 outline-none placeholder-pink400 text-gray900" type="email" placeholder="Email Address">
+        <img class="error-msg hidden absolute right-25 top-1/2 -translate-y-1/2" src="./images/icon-error.svg" alt="icon-error">
+        <button id="button" class="absolute right-0 top-0 rounded-4xl py-5 px-10" type="button"><img src="./images/icon-arrow.svg" alt="icon-arrow"></button>
+      </div>
+      <p class="pl-6 mt-4 error-msg hidden text-red500">Please provide a valid email</p>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
